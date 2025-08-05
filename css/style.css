@@ -1,0 +1,246 @@
+* { margin: 0;
+box-sizing: border-box;
+scroll-behavior: smooth;
+
+}
+:root {
+--primary: #e91717 ;
+--secondary:#006C9C;
+--tercero:#FAAD29;
+}
+
+/* titulo y logo */
+.logo a { 
+text-decoration: none;
+display: flex;
+flex-wrap: wrap;
+}
+.logo img{
+    border-radius: 20px;
+}
+
+/* Menu de navegacion */
+
+.barra{
+grid-area: nav;
+top: 0;
+width: 100%;
+height: 70px;
+background-color: black;
+position: fixed;
+align-content: center;
+z-index: 1000;
+display: flex;
+justify-content: flex-end;
+}
+.nav{
+display: inline-block;
+}
+
+.nav-list{
+display: contents;
+margin: 0;
+text-align: center;
+}
+
+.nav-item{
+display: flex;
+align-items: center;
+margin-top:0;
+padding: 1rem;
+}
+
+.nav-link{
+color: white;
+text-decoration: none;
+display: inline-block;
+padding: 1rem;
+background-color: var(--primary);
+cursor: pointer;
+border-radius: 20px;
+
+}
+
+
+/* botones */
+.nav-link:hover{
+background-color:#e91717 ;
+color: #fff;
+transform: scale(1.2);
+border-radius: 20px;
+
+}
+
+.nav-link:active {
+    transform: translateY(0) scale(0.95);
+}
+
+.menu {
+position: absolute;
+top: 0;
+right: 0;
+width: 160px;
+height: 100vh;
+gap: 1rem;
+background-color:rgba(0, 0, 0, 0.850);
+padding: 1rem;
+transform: translateX(+100%);
+transition: all 0.3s ease;
+opacity: 0;
+visibility: hidden;}
+
+.menu a {
+color: white;
+text-decoration: none;
+transition: color 0.3s ease;
+
+}
+.menu li {
+display: flex;
+flex-direction: column;
+justify-content: center;
+font-size: 20px;
+padding: 0.5rem;
+}
+
+.menu ul{
+padding: 10px;
+}
+
+.menu-toggle-checkbox {
+display: none;
+}
+
+.menu-toggle {
+position: absolute;
+top: 0;
+right: 10px;
+display: flex;
+flex-wrap: nowrap;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+padding: 1rem;
+background-color:black;
+width: 4rem;
+}
+
+.menu-toggle-checkbox:checked ~ .menu-toggle + .menu,
+.menu-toggle-checkbox:checked + .menu-toggle + .menu {
+transform: translateY(11vh);
+opacity: 1;
+visibility: visible;
+pointer-events: auto;
+}
+
+.menu-toggle span {
+display: block;
+width: 3rem;
+height: 6px;
+background-color: var(--primary);
+margin: 3px 0;
+transition: 0.3s;
+}
+.menu-toggle-checkbox:checked + .menu-toggle span:nth-child(1) {
+transform: rotate(45deg) translate(12px, 8px);}
+
+.menu-toggle-checkbox:checked + .menu-toggle span:nth-child(2) {
+opacity: 0;
+transform: translateX(0);
+
+}
+.menu-toggle-checkbox:checked + .menu-toggle span:nth-child(3) {
+transform: rotate(-45deg) translate(8px, -6px);}
+
+/* secciones */
+
+.contenido{
+    grid-area: main;
+margin: 0;
+background-color: gray;
+margin: 0;
+}
+
+.secciones{
+background-color: var(--secondary);
+border: solid 2px black;
+padding: 100px;
+
+}
+
+
+/* Pie de Pagina */
+
+footer {
+background-color: black;
+color:white;
+}
+
+
+
+
+
+
+
+
+/* diseeño Resposive */
+/* Telefonos */
+@media screen and (max-width: 426px) {
+    .container {display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 10vh auto;
+        grid-template-areas:
+        'nav    nav'
+        'main   main'
+        'main   main'
+        'main   main'
+        'main   main';
+        .nav-list{display: none;}
+    .logo{ 
+position: absolute;
+top: 15%;
+left: 20%;
+}
+}}
+
+
+/* tablets */
+@media screen and (min-width: 426px) and (max-width: 1024px) {
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 10vh auto auto;
+    grid-template-areas:
+    'nav      nav       nav '
+    'main     main      main  '   
+    'main     main      main  '
+    'main     main      main  '    
+    'main     main      main'; 
+        .menu-burguer{display: none;}
+        .logo{ 
+position: absolute;
+top: 15%;
+left:2%;
+}
+}}
+
+/* laptos y pantallas Hd */
+@media screen and (min-width:1025px ) and (max-width: 2560px) {
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 10vh 25vh 35vh 35vh;
+    grid-template-areas:
+    'nav      nav       nav       nav        nav'
+    'main     main      main      main       main'  
+    'main     main      main      main       main'
+    'main     main      main      main       main'
+    'main     main      main      main       main';    
+    .menu-burguer{display: none;}
+    .logo{ 
+position: absolute;
+top: 15%;
+left: 10%;}
+
+}}
