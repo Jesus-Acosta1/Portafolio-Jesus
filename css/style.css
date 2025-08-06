@@ -1,12 +1,13 @@
 * { margin: 0;
 box-sizing: border-box;
 scroll-behavior: smooth;
+scroll-padding-top: 70px;
 
 }
 :root {
 --primary: #e91717 ;
---secondary:#006C9C;
---tercero:#FAAD29;
+--secondary:#0040FF;
+--tercero:#FFBF00;
 }
 
 /* titulo y logo */
@@ -16,7 +17,8 @@ display: flex;
 flex-wrap: wrap;
 }
 .logo img{
-    border-radius: 20px;
+border-radius: 10px;
+width: 115px;
 }
 
 /* Menu de navegacion */
@@ -50,20 +52,28 @@ margin-top:0;
 padding: 1rem;
 }
 
-.nav-link{
-color: white;
+.link-movile{
+text-decoration: none;
+display: inline-block;
+padding: 1rem;
+cursor: pointer;
+border-radius: 20px;
+
+}
+
+.link-desktop{
+color: rgb(255, 255, 255);
 text-decoration: none;
 display: inline-block;
 padding: 1rem;
 background-color: var(--primary);
 cursor: pointer;
 border-radius: 20px;
-
 }
 
 
 /* botones */
-.nav-link:hover{
+.link-desktop:hover{
 background-color:#e91717 ;
 color: #fff;
 transform: scale(1.2);
@@ -71,15 +81,15 @@ border-radius: 20px;
 
 }
 
-.nav-link:active {
+.link-desktop:active {
     transform: translateY(0) scale(0.95);
 }
 
 .menu {
 position: absolute;
-top: 0;
+top: -12px;
 right: 0;
-width: 160px;
+width: 26vh;
 height: 100vh;
 gap: 1rem;
 background-color:rgba(0, 0, 0, 0.850);
@@ -136,14 +146,15 @@ pointer-events: auto;
 
 .menu-toggle span {
 display: block;
-width: 3rem;
-height: 6px;
+width: 40px;
+height: 5px;
+border-radius: 10px;
 background-color: var(--primary);
 margin: 3px 0;
 transition: 0.3s;
 }
 .menu-toggle-checkbox:checked + .menu-toggle span:nth-child(1) {
-transform: rotate(45deg) translate(12px, 8px);}
+transform: rotate(45deg) translate(10px, 8px);}
 
 .menu-toggle-checkbox:checked + .menu-toggle span:nth-child(2) {
 opacity: 0;
@@ -151,21 +162,22 @@ transform: translateX(0);
 
 }
 .menu-toggle-checkbox:checked + .menu-toggle span:nth-child(3) {
-transform: rotate(-45deg) translate(8px, -6px);}
+transform: rotate(-45deg) translate(7px, -6px);}
 
 /* secciones */
 
 .contenido{
-    grid-area: main;
+grid-area: main;
 margin: 0;
-background-color: gray;
-margin: 0;
+background-color: rgb(253, 0, 0);
+margin-top: 0;
 }
 
 .secciones{
 background-color: var(--secondary);
 border: solid 2px black;
 padding: 100px;
+margin-top: 0;
 
 }
 
@@ -175,6 +187,8 @@ padding: 100px;
 footer {
 background-color: black;
 color:white;
+margin: 0;
+width: 100%;
 }
 
 
@@ -186,10 +200,10 @@ color:white;
 
 /* diseeño Resposive */
 /* Telefonos */
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 615px) {
     .container {display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 10vh auto;
+        grid-template-rows: 70px auto;
         grid-template-areas:
         'nav    nav'
         'main   main'
@@ -199,18 +213,18 @@ color:white;
         .nav-list{display: none;}
     .logo{ 
 position: absolute;
-top: 15%;
+top: 25%;
 left: 20%;
 }
 }}
 
 
 /* tablets */
-@media screen and (min-width: 426px) and (max-width: 1024px) {
+@media screen and (min-width: 616px) and (max-width: 1023px) {
 .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 10vh auto auto;
+    grid-template-rows: 70px auto auto;
     grid-template-areas:
     'nav      nav       nav '
     'main     main      main  '   
@@ -220,17 +234,17 @@ left: 20%;
         .menu-burguer{display: none;}
         .logo{ 
 position: absolute;
-top: 15%;
+top: 25%;
 left:2%;
 }
 }}
 
 /* laptos y pantallas Hd */
-@media screen and (min-width:1025px ) and (max-width: 2560px) {
+@media screen and (min-width:1024px ) and (max-width: 2560px) {
 .container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 10vh 25vh 35vh 35vh;
+    grid-template-rows: 70px 25vh 35vh 35vh;
     grid-template-areas:
     'nav      nav       nav       nav        nav'
     'main     main      main      main       main'  
@@ -240,7 +254,6 @@ left:2%;
     .menu-burguer{display: none;}
     .logo{ 
 position: absolute;
-top: 15%;
+top: 25%;
 left: 10%;}
-
 }}
