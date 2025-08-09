@@ -63,13 +63,23 @@
             <!-- secciones x 5 -->
             <!-- Sobre mí -->
             <section id="Sobre-mí" class="secciones">
-                <div class="about">
+                <!-- <div class="about">
                     <h2>Sobre mí</h2>
                     <img src="./Imagenes/foto-pj.jpg" alt="">
                     <p>principales Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit iste, quo autem tempore
                         soluta corrupti nisi aspernatur mollitia ex. Laborum, veritatis voluptate. Modi consequatur
                         corporis quisquam repellat minima reiciendis omnis.</p>
+                </div> -->
+
+                <div class="card" style="width: 18rem;">
+                    <img src="./Imagenes/foto-pj.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card’s content.</p>
+                    </div>
                 </div>
+
+
             </section>
 
             <!-- Habilidades -->
@@ -77,21 +87,52 @@
                 <div>
                     <h2>Habilidades</h2>
                     <h3>principales</h3>
-                    <img src="./Iconos/html-logo.png" alt="">
-                    <img src="./Iconos/css-3-logo.png" alt="">
-                    <img src="./Iconos/java-script-logo.png" alt="">
+                    <img class="icon" src="./Iconos/html-logo.png" alt="">
+                    <img class="icon" src="./Iconos/css-3-logo.png" alt="">
+                    <img class="icon" src="./Iconos/java-script-logo.png" alt="">
                 </div>
             </section>
 
             <!-- Proyectos -->
             <section id="Proyectos" class="secciones">
                 <h2>Proyectos</h2>
-                <p>2 de mis primeros proyectos en los que trabaje hasta ahora y sigo terminandolos a medida que voy
-                    aprendiendio nuevas tecnologias</p>
-                <ol>
-                    <li><a href="https://jesus-acosta1.github.io/web-burger/">Jesus burguer</a></li>
-                    <li><a href="https://jesus-acosta1.github.io/Coffee2.0/#inicio">Luna Cafe</a></li>
-                </ol>
+
+                <div class="cards">
+
+
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="./Imagenes/rp-tipos-cafe.jpg" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Mi primer repositorio en el cual estuve utilizando flexbox para que
+                                cada elemento quedara en la posiciones correspondiente. eligi el tema de cafe y utilice
+                                un fondo en realcion al tema para que fuera mas vistoso
+                            </p>
+                            <a class="btn" href="https://jesus-acosta1.github.io/clasegithub/">tipos de Cafe</a>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="./Imagenes/rp-web-burguer.jpg" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Mi segundo repositorio en este empece a utilizar grip el cual me costo
+                                un poco de ajustar a los tamaños y quedo a medio terminar. elegi el tema de
+                                hamburgueseria para seguir con la misma </p>
+                            <a class="btn" href="https://jesus-acosta1.github.io/web-burger/">Jesus burguer</a>
+
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="./Imagenes/rp-luna-cafe.jpg" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">En este implemente de nuevo el grip logrando una mejor implementacion
+                                ademas del menu hamburguesa tambien utilice un poco las transformaciones y el box-shadow
+                            </p>
+                            <a class="btn" href="https://jesus-acosta1.github.io/Coffee2.0/#inicio">Luna Cafe</a>
+                        </div>
+                    </div>
+                </div>
+
             </section>
 
             <!-- Formacion -->
@@ -104,17 +145,17 @@
             <!-- Contacto -->
             <section id="contacto" class="secciones">
                 <h2>Contacto</h2>
+                <p>Para más información no dudes en contactarme a través de mi correo</p><br>
+
+                <p><img src="./Iconos/mail.png" width="25px" alt=""> Jesus.acostag015@gmail.com</p>
+                <p><img src="./Iconos/github.png" width="25px" alt=""> Desarrollado por: Jesus-Acosta1</p>
             </section>
         </main>
     </div>
     <!-- pie de pagina -->
     <footer>
         <img class="jes" src="./Imagenes/jesus-acosta-black.jpg" width="50px" alt="Marca Personal">
-        <p>Para más información no dudes en contactarme a través de mi correo</p><br>
-        <img src="./Iconos/mail.png" width="30px" alt="">
-        <p>Jesus.acostag015@gmail.com</p><br>
-        <img src="./Iconos/github.png" width="30px" alt="">
-        <p>Desarrollado por: Jesus-Acosta1</p>
+        <p>derechos </p>
     </footer>
     <script src="./index.js"></script>
 </body>
