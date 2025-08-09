@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body id="inicio">
+<body id="index">
     <div class="container">
         <header>
 
@@ -16,8 +16,10 @@
             <!-- menu -->
             <nav class="barra">
                 <!-- titulo y logo -->
-                <a class="logo" href="#inicio">
-                    <img src="./Imagenes/Logo-St-Shop.jpg" alt="Logo-St-Shop">
+                <!-- <a class="logo" href="#index">
+                    <img class="logo1" src="./Imagenes/Logo-St-Shop.jpg" alt="Logo-St-Shop"></a> -->
+                <a class="logo" href="#index">
+                    <h1>Jesus</h1>
                 </a>
 
                 <!-- menu burger solo movile -->
@@ -29,84 +31,92 @@
                         <span></span>
                     </label>
                     <ul class="menu">
-                        <li><a href="#home1" class="link-movile">Inicio</a></li>
-                        <li><a href="#home2" class="link-movile">Menu</a></li>
-                        <li><a href="#home3" class="link-movile">Servicios</a></li>
-                        <li><a href="#home4" class="link-movile">Informacion</a></li>
-                        <li><a href="#home5" class="link-movile">contacto</a></li>
+                        <li><a href="#Sobre-mí" class="link-movile">Sobre mí</a></li>
+                        <li><a href="#Habilidades" class="link-movile">Habilidades</a></li>
+                        <li><a href="#Proyectos" class="link-movile">Proyectos</a></li>
+                        <li><a href="#Informacion" class="link-movile">Formación</a></li>
+                        <li><a href="#contacto" class="link-movile">Contacto</a></li>
                     </ul>
                 </div>
 
                 <!-- barra de navegacion vers desktop -->
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <a href="#home1" class="link-desktop">Inicio</a>
+                        <a href="#Sobre-mí" class="link-desktop">Sobre mí</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#home2" class="link-desktop">Menu</a>
+                        <a href="#Habilidades" class="link-desktop">Habilidades</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#home3" class="link-desktop">Servicios</a>
+                        <a href="#Proyectos" class="link-desktop">Proyectos</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#home4" class="link-desktop">Informacion</a>
+                        <a href="#Formación" class="link-desktop">Formación</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#home5" class="link-desktop">contacto</a>
+                        <a href="#contacto" class="link-desktop">contacto</a>
                     </li>
                 </ul>
             </nav>
         </header>
         <main class="contenido">
             <!-- secciones x 5 -->
-            <section id="home1" class="secciones">
-                <!-- Inicio -->
-                <article class="card">
-                    <div class="">
-                        <img src="" alt="">
-                        <p></p>
-                    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-                </article>
+            <!-- Sobre mí -->
+            <section id="Sobre-mí" class="secciones">
+                <div class="about">
+                    <h2>Sobre mí</h2>
+                    <img src="./Imagenes/foto-pj.jpg" alt="">
+                    <p>principales Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit iste, quo autem tempore
+                        soluta corrupti nisi aspernatur mollitia ex. Laborum, veritatis voluptate. Modi consequatur
+                        corporis quisquam repellat minima reiciendis omnis.</p>
+                </div>
             </section>
 
-            <section id="home2" class="secciones">
-                <!-- Menu -->
-
+            <!-- Habilidades -->
+            <section id="Habilidades" class="secciones">
+                <div>
+                    <h2>Habilidades</h2>
+                    <h3>principales</h3>
+                    <img src="./Iconos/html-logo.png" alt="">
+                    <img src="./Iconos/css-3-logo.png" alt="">
+                    <img src="./Iconos/java-script-logo.png" alt="">
+                </div>
             </section>
 
-            <section id="home3" class="secciones">
-                <!-- Servicios -->
-
+            <!-- Proyectos -->
+            <section id="Proyectos" class="secciones">
+                <h2>Proyectos</h2>
+                <p>2 de mis primeros proyectos en los que trabaje hasta ahora y sigo terminandolos a medida que voy
+                    aprendiendio nuevas tecnologias</p>
+                <ol>
+                    <li><a href="https://jesus-acosta1.github.io/web-burger/">Jesus burguer</a></li>
+                    <li><a href="https://jesus-acosta1.github.io/Coffee2.0/#inicio">Luna Cafe</a></li>
+                </ol>
             </section>
 
-            <section id="home4" class="secciones">
-                <!-- informacion -->
+            <!-- Formacion -->
+            <section id=" Formación" class="secciones">
+                <h2>Formación</h2>
+                <img src="./Iconos/UTN_logo.jpg" width="124px" alt="">
+                <img src="./Iconos/ucv-logo.png" width="124px" alt="">
             </section>
 
-            <section id="home5" class="secciones">
-                <!-- Contacto -->
+            <!-- Contacto -->
+            <section id="contacto" class="secciones">
+                <h2>Contacto</h2>
             </section>
         </main>
-
     </div>
     <!-- pie de pagina -->
     <footer>
-        <p>Desarrollado por Jesus Acosta. © 2025</p>
-        <p> Todos los derechos reservados.</p>
+        <img class="jes" src="./Imagenes/jesus-acosta-black.jpg" width="50px" alt="Marca Personal">
+        <p>Para más información no dudes en contactarme a través de mi correo</p><br>
+        <img src="./Iconos/mail.png" width="30px" alt="">
+        <p>Jesus.acostag015@gmail.com</p><br>
+        <img src="./Iconos/github.png" width="30px" alt="">
+        <p>Desarrollado por: Jesus-Acosta1</p>
     </footer>
-
+    <script src="./index.js"></script>
 </body>
 
 </html>
