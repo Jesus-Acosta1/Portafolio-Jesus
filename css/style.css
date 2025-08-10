@@ -6,9 +6,9 @@ scroll-padding-top: 70px;
 
 
 :root {
---primary: #96276d;
---secondary:#e340a7;
---tercero:#c4b6f5;
+    --color-principal: #96276d;
+    --color-secundario: #e340a7;
+    --color-terciario: #c4b6f5;
 }
 
 body{color: white;
@@ -19,10 +19,10 @@ body{color: white;
 h1{
 font-family: 'Roboto', sans-serif;
 font-size: 2em;
-color: #c4b6f5;
-background: linear-gradient(#96276d , black ) ;
+color: var(--color-terciario);
+background: linear-gradient(var(--color-principal), black ) ;
 text-align: center;
-border: solid 2px #e340a7;
+border: solid 2px var(--color-secundario);
 border-radius: 20px;
 text-shadow: 1px 5px 1px #1f0555;
 padding: 5px;
@@ -78,15 +78,24 @@ color: #c4b6f5;
 text-decoration: none;
 display: inline-block;
 padding: 15px 10px 15px 10px;
-background: linear-gradient(#96276d , black ) ;
-border: solid 2px #e340a7;
+background: linear-gradient(var(--color-principal) , black ) ;
+border: solid 2px var(--color-secundario);
 cursor: pointer;
 border-radius: 20px;
 font-family: Arial, Helvetica, sans-serif;
 }
 
-h2{color: white;
-background-color: transparent ;
+h2{
+font-family: 'Roboto', sans-serif;
+font-size: 2em;
+color: var(--color-terciario);
+background: linear-gradient(var(--color-principal), black);
+border: solid 2px var(--color-secundario);
+border-radius: 20px;
+text-shadow: 1px 5px 1px #1f0555;
+padding: 10px 5px;
+width: fit-content;
+margin: 0 auto;
 }
 
 .link-movile{
@@ -99,22 +108,20 @@ border-radius: 20px;
 }
 /* Animaciones de los botones */
 .link-desktop:hover{
-background-color:var(--secondary) ;
-color: #c4b6f5;
-box-shadow: 0 0 9px 6px #e340a7;
+background-color:var(--color-secundario) ;
+color: var(--color-terciario);
+box-shadow: 0 0 9px 6px var(--color-secundario);
 border-radius: 20px;
-/* transform: translateY(0) scale(1.2); */
 }
 
 .logo:hover{
-background-color:var(--secondary) ;
-color: #c4b6f5;
-box-shadow: 0 0 9px 6px #e340a7;
+background-color:var(--color-secundario) ;
+color: var(--color-terciario);
+box-shadow: 0 0 9px 6px var(--color-secundario);
 border-radius: 20px;
-/* transform: translateY(0) scale(1.2); */
 }
 .link-desktop:active {
-    transform: translateX(0) scale(0.95);
+    transform: scale(0.95);
 }
 
 .menu {
@@ -126,14 +133,13 @@ height: 100vh ;
 padding: 1rem;
 gap: 1rem;
 background-color:rgba(0, 0, 0, 0.9);
-padding: 1rem;
 transform: translateX(+100%);
 transition: all 0.5s ease;
 opacity: 0;
 visibility: hidden;}
 
 .menu a {
-color: #e340a7;
+color: var(--color-secundario);
 text-decoration: none;
 transition: color 0.3s ease;
 
@@ -182,7 +188,7 @@ display: block;
 width: 40px;
 height: 5px;
 border-radius: 10px;
-background-color: #e340a7;
+background-color: var(--color-secundario);
 margin: 3px 0;
 transition: 0.3s;
 }
@@ -201,16 +207,13 @@ transform: rotate(-45deg) translate(7px, -6px);}
 
 .contenido{
 grid-area: main;
-margin: 0;
-background: linear-gradient(black ,#96276d ,#3c06b0 ) ;
-margin-top: 0;
+margin: 0 auto ;
+background: linear-gradient(black ,var(--color-principal) ,#3c06b0 ) ;
+padding-top: 50px;
 width: 100%;
 }
 
 .secciones{
-/* background: linear-gradient(#DE0921, #0B254D) ; */
-background-color: rgba(255, 255, 255, 0);
-border-radius: 20px;
 margin: 0 auto;
 
 }
@@ -227,58 +230,66 @@ margin: 0 auto;
 
 /*           proyectos               */
 .cards{
-background: rgba(250, 250, 97, 0);
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 padding: 50px;
 display: flex;
 flex-wrap: wrap;
 flex-direction: row;
 gap: 5rem;
 }
+
+
 .card{
 display: flex;
 flex-direction: column;
 padding: 0;
-background: linear-gradient(#96276d ,#3c06b0 ) ;
-border: solid 2px var(--secondary);
-border-top-left-radius: 25px;
-border-top-right-radius: 25px;
+background: linear-gradient(var(--color-principal) ,#3c06b0 ) ;
+border: solid 2px var(--color-secundario);
+border-radius: 25px;
 cursor: pointer;
 box-shadow: 0 0 9px 6px #480a31;
-
+overflow: hidden;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.card:hover {
+transform: translateY(-5px);
+box-shadow: 0 0 15px 8px var(--color-secundario);
+}
 
 .card-img-top {
 width: 100%;
-background-size: cover;
-border-top-left-radius: 25px;
-border-top-right-radius: 25px;
+height: 180px;
+object-fit: cover;
 }
 
-.card-body{
-width: fit-content;
-height: 10rem;
-
+.card-body {
+flex: 1;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+padding: 1rem;
 }
 
 .btn{
-color: #c4b6f5;
+color: var(--color-terciario);
 text-decoration: none;
-padding: 15px 10px 15px 10px;
-background: linear-gradient(#96276d , black ) ;
-border: solid 2px #e340a7;
+padding: 15px 10px;
+background: linear-gradient(var(--color-principal) , black ) ;
+border: solid 2px var(--color-secundario);
 cursor: pointer;
 border-radius: 20px;
 font-family: Arial, Helvetica, sans-serif;
 position: relative;
-top: 40px;
-left: 80px;
+align-self: center;
+margin-top: auto;
 }
 
+
 .btn:hover{
-background-color:var(--secondary) ;
-color: #c4b6f5;
-box-shadow: 0 0 9px 6px #e340a7;
+background-color:var(--color-secundario) ;
+color: var(--color-terciario);
+box-shadow: 0 0 9px 6px var(--color-secundario);
 border-radius: 20px;
 
 }
@@ -300,14 +311,7 @@ gap: 1rem;
 footer .jes{
     border-radius: 50%;
     border: solid 2px #000000;
-box-shadow: 0 0 9px 6px var(--primary);
-filter: drop-shadow(0 0 9px 6px var(--primary));
-
-}
-
-
-h2{
-text-align: center;
+box-shadow: 0 0 9px 6px var(--color-principal);
 }
 
 
@@ -329,14 +333,15 @@ text-align: center;
         'main   main'
         'main   main'
         'main   main';
-        .nav-list{display: none;}
+}
+    .nav-list{display: none;}
     .logo{ 
 position: absolute;
 top: 10%;
 left: 20%;
 text-decoration: none;
 }
-}}
+}
 
 
 /* tablets */
@@ -351,18 +356,18 @@ text-decoration: none;
     'main     main      main  '
     'main     main      main  '    
     'main     main      main'; 
-        .menu-burguer{display: none;}
-        .logo{ 
+}
+    .menu-burguer{display: none;}
+    .logo{ 
 position: absolute;
 top: 10%;
 left:2%;
 text-decoration: none;
-
 }
-}}
+}
 
 /* laptos y pantallas Hd */
-@media screen and (min-width:1024px ) and (max-width: 2560px) {
+@media screen and (min-width:1024px )/*  and (max-width: 2560px)*/ { 
 .container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -372,7 +377,8 @@ text-decoration: none;
     'main     main      main      main       main'  
     'main     main      main      main       main'
     'main     main      main      main       main'
-    'main     main      main      main       main';    
+    'main     main      main      main       main';
+}
     .menu-burguer{display: none;}
     .logo{ 
 position: absolute;
@@ -380,7 +386,5 @@ top: 10%;
 left: 10%;
 text-decoration: none;
 }
-    .secciones{
-width: 80%;
+    .secciones{width: 80%;}
 }
-}}
