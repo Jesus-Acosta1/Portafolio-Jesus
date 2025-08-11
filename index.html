@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabajo Practico 1.0</title>
     <link rel="stylesheet" href="./css/style.css">
+
 </head>
 
 <body id="index">
@@ -16,8 +17,6 @@
             <!-- menu -->
             <nav class="barra">
                 <!-- titulo y logo -->
-                <!-- <a class="logo" href="#index">
-                    <img class="logo1" src="./Imagenes/Logo-St-Shop.jpg" alt="Logo-St-Shop"></a> -->
                 <a class="logo" href="#index">
                     <h1>Jesus</h1>
                 </a>
@@ -61,25 +60,19 @@
         </header>
         <main class="contenido">
             <!-- secciones x 5 -->
+
             <!-- Sobre mí -->
             <section id="sobre-mi" class="secciones">
-                <!-- <div class="about">
-                    <h2>Sobre mí</h2>
-                    <img src="./Imagenes/foto-pj.jpg" alt="">
-                    <p>principales Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit iste, quo autem tempore
-                        soluta corrupti nisi aspernatur mollitia ex. Laborum, veritatis voluptate. Modi consequatur
-                        corporis quisquam repellat minima reiciendis omnis.</p>
-                </div> -->
                 <h2>Sobre mí</h2>
-                <div class="card" style="width: 18rem;">
+                <div class="about">
                     <img src="./Imagenes/foto-pj.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <p class="card-text"> soy jesus y estoy interezado en seguir aprendiendo cada vez mas todo lo
+                        <p class="about-text"> soy jesus y estoy interezado en seguir aprendiendo cada vez mas todo lo
                             que tenga que ver con programacion me gusta los desafios y no me importa el tiempo que me
                             lleve aprender algo siempre y cuando lo domine ya que soy muy orgulloso para rendirme en
                             cualquier ambito de mi vida.
                             mis actividades favoritas son ir al gimnasio, correr y andar en bicicleta.
-                            me gusta mucho ver el atardecer y disfrutar de la vida en la naturaleza.
+                            me gusta mucho ver el atardecer y disfrutar de la vida en la naturaleza..
                         </p>
                     </div>
                 </div>
@@ -89,11 +82,12 @@
 
             <!-- Habilidades -->
             <section id="habilidades" class="secciones">
-                <div>
-                    <h2>Habilidades</h2>
-                    <img class="icon" src="./Iconos/html-logo.png" alt="">
-                    <img class="icon" src="./Iconos/css-3-logo.png" alt="">
-                    <img class="icon" src="./Iconos/java-script-logo.png" alt="">
+                <h2>Habilidades</h2>
+
+                <div class="cards">
+                    <img class="icon card" src="./Iconos/html-logo.png" alt="">
+                    <img class="icon card" src="./Iconos/css-3-logo.png" alt="">
+                    <img class="icon card" src="./Iconos/java-script-logo.png" alt="">
                 </div>
             </section>
 
@@ -101,72 +95,92 @@
             <section id="proyectos" class="secciones">
                 <h2>Proyectos</h2>
 
-                <div class="cards">
-
-                    <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="./Imagenes/rp-tipos-cafe.jpg" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">Mi primer repositorio en el cual estuve utilizando flexbox para que
-                                cada elemento quedara en la posiciones correspondiente. eligi el tema de cafe y utilice
-                                un fondo en realcion al tema para que fuera mas vistoso
-                            </p>
+                <div class="carpeta">
+                    <div class="item">
+                        <div class="layer">
+                            <img class="card-img-top" src="./Imagenes/rp-tipos-cafe.jpg" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Mi primer repositorio en el cual estuve utilizando flexbox para que
+                                    cada elemento quedara en la posiciones correspondiente. eligi el tema de cafe y
+                                    utilice
+                                    un fondo en realcion al tema para que fuera mas vistoso
+                                </p>
+                            </div>
                             <a class="btn" href="https://jesus-acosta1.github.io/clasegithub/">Tipos de Cafe</a>
                         </div>
                     </div>
-
-                    <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="./Imagenes/rp-web-burguer.jpg" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">Mi segundo repositorio en este empece a utilizar grip el cual me costo
-                                un poco de ajustar a los tamaños y quedo a medio terminar. elegi el tema de
-                                hamburgueseria para seguir con la misma </p>
+                    <div class="item">
+                        <div class="layer">
+                            <img class="card-img-top" src="./Imagenes/rp-web-burguer.jpg" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Mi segundo repositorio en este empece a utilizar grip el cual me
+                                    costo
+                                    un poco de ajustar a los tamaños y quedo a medio terminar. elegi el tema de
+                                    hamburgueseria para seguir con la misma </p>
+                            </div>
                             <a class="btn" href="https://jesus-acosta1.github.io/web-burger/">Jesus burguer</a>
-
                         </div>
                     </div>
-
-                    <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="./Imagenes/rp-luna-cafe.jpg" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">En este implemente de nuevo el grip logrando una mejor implementacion
-                                ademas del menu hamburguesa tambien utilice un poco las transformaciones y el box-shadow
-                            </p>
+                    <div class="item">
+                        <div class="layer">
+                            <img class="card-img-top" src="./Imagenes/rp-luna-cafe.jpg" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">En este implemente de nuevo el grip logrando una mejor
+                                    implementacion
+                                    ademas del menu hamburguesa tambien utilice un poco las transformaciones y el
+                                    box-shadow
+                                </p>
+                            </div>
                             <a class="btn" href="https://jesus-acosta1.github.io/Coffee2.0/#inicio">Luna Cafe</a>
                         </div>
                     </div>
                 </div>
-
             </section>
 
             <!-- Formacion -->
             <section id="formacion" class="secciones">
                 <h2>Formación</h2>
-                <img src="./Iconos/UTN_logo.jpg" width="124px" alt="">
-                <img src="./Iconos/ucv-logo.png" width="124px" alt="">
+                <div class="cards">
+                    <figure class="card-figure">
+                        <img class="figure-top" src="./Iconos/ucv-logo.png" alt="...">
+                        <figcaption class="figure-caption">Universidad Central de Venezuela Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Soluta repudiandae, mollitia est reprehenderit eum magni
+                            beatae
+                            perspiciatis, nesciunt eius dolorum velit. Earum fuga id quaerat quos sapiente, nihil magni
+                            hic..</figcaption>
+                    </figure>
+                    <figure class="card-figure">
+                        <img class="figure-top" src="./Iconos/UTN_logo.jpg" width="180px" alt="...">
+                        <figcaption class="figure-caption">Carlos Ramon Aponte Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Commodi, voluptate, cum blanditiis voluptatem eaque harum sed vitae ex
+                            provident molestiae in earum architecto atque praesentium. Quisquam quis fugit aperiam
+                            dicta?.
+                        </figcaption>
+                    </figure>
+                </div>
             </section>
 
             <!-- Contacto -->
             <section id="contacto" class="secciones">
                 <h2>Contacto</h2>
-                <p style="text-align:center; padding:20px;">
-                    Si estas interezado en trabajar conmigo en un proyecto o simplemente saludar, deja tu mensaje.
-                </p>
-                <form style="max-width:500px; margin:auto; display:flex; flex-direction:column; gap:1rem;">
-                    <input type="text" placeholder="Tu nombre" required>
-                    <input type="email" placeholder="Tu email" required>
-                    <textarea placeholder="Tu mensaje" required></textarea>
-                    <button type="submit" class="btn">Enviar mensaje</button>
-                </form>
-                <p><img src="./Iconos/mail.png" width="25px" alt=""> Jesus.acostag015@gmail.com</p>
-                <p><img src="./Iconos/github.png" width="25px" alt=""> Desarrollado por: Jesus-Acosta1</p>
+                <div class="..">
+                    <p style="text-align:center; padding:20px;">
+                        Si estas interezado en trabajar conmigo en un proyecto o simplemente saludar, deja tu mensaje.
+                    </p>
+                    <form style="max-width:500px; margin:auto; display:flex; flex-direction:column; gap:1rem;">
+                        <input type="text" placeholder="Tu nombre" required>
+                        <input type="email" placeholder="Tu email" required>
+                        <textarea placeholder="Tu mensaje" required></textarea>
+                        <button type="submit" class="btn">Enviar mensaje</button>
+                    </form>
+                </div>
             </section>
-
         </main>
     </div>
     <!-- pie de pagina -->
     <footer>
-        <img class="jes" src="./Imagenes/jesus-acosta-black.jpg" width="50px" alt="Marca Personal">
-        <p>derechos </p>
+        <p><img src="./Iconos/github.png" width="25px" alt=""> Desarrollado por: Jesus-Acosta1</p>
+        <p><img src="./Iconos/mail.png" width="25px" alt=""> Jesus.acostag015@gmail.com</p>
     </footer>
     <script src="./index.js"></script>
 </body>
